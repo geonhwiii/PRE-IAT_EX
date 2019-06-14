@@ -1,0 +1,15 @@
+{
+  "name": "iat-test",
+  "version": "1.0.0",
+  "description": "CODESTATES IAT EX",
+  "main": "index.js",
+  "repository": "https://github.com/geonhwiii/PRE-IAT_EX.git",
+  "author": "geonhwiii <g01063962671@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.8.0"
+  },
+  "scripts": {
+    "test": "jest --watchAll --verbose"
+  }
+}
