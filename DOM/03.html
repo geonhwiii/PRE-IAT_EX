@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JSON parser</title>
+</head>
+<body>
+  <script>
+    var data = JSON.parse('{"id": 1, "title": "aaa" }')
+    console.log(data.title); // aaa
+
+    var data2 = {id: 2, title: "bbb" }
+    var json = JSON.stringify(data2);
+    console.log(json);  // {"id":2,"title":"bbb"}
+  </script>
+</body>
+</html>

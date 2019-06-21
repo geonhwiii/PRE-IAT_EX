@@ -1,0 +1,1 @@
+window.addEventListener('load', () => alert('안녕하세요...!'));

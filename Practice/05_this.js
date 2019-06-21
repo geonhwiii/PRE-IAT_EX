@@ -11,7 +11,7 @@ console.log(valueOfProduct);
 
 const calVAT = product.getVAT;
 const VAT = calVAT();
-console.log(VAT); // NAN원
+console.log(VAT); // NAN원ls
 
 const counter1 = {
   count: 0,
