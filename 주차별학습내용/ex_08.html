@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    * {font-family: D2coding, sans-serif;}
+    a {
+      text-decoration: none; 
+      color: black; 
+      font-size: 22px; 
+      margin: 10px; 
+      border: 1px solid gray; 
+      background: #eee; 
+      padding: 2px; 
+      border-radius: 3px; 
+      transition: all 0.3s; 
+      display: inline-block; 
+      margin-bottom: 10px;}
+    a:hover {background: #bbb;}
+  </style>
+</head>
+<body>
+
+  <a href="#" id="b1">b1</a>
+  <a href="#" id="b2">b2</a>
+  <a href="#" id="b3">b3</a>
+  <a href="#" id="b4">b4</a>
+  <a href="#" id="b5">b5</a>
+  <a href="#" id="b6">b6</a>
+  <a href="#" id="b7">b7</a>
+  <a href="#" id="b8">b8</a>
+  <a href="#" id="b9">b9</a>
+  <a href="#" id="b10">b10</a>
+  <hr>
+  <script>
+    // console.clear()
+    for(let i=1; i<11; i++) {
+        document.getElementById("b"+i).onclick=function() {
+            alert(i);
+        }
+    }
+
+    function addLinks () {
+        for (var i=0, link; i<5; i++) {
+            link = document.createElement("a");
+            link.innerHTML = "Link " + i;
+            link.onclick = function () {
+                alert(i);
+            };
+            document.body.appendChild(link);
+        }
+    }
+
+    function addLinks2 () {
+        for (var i=0, link; i<5; i++) {
+            link = document.createElement("a");
+            link.innerHTML = "Link " + i;
+            link.onclick = function (num) {
+                return function () {
+                    alert(num);
+                };
+            }(i);
+            document.body.appendChild(link);
+        }
+    }
+    addLinks()
+    addLinks2()
+  </script>
+</body>
+</html>
