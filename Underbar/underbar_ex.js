@@ -116,10 +116,10 @@ _.defaults = (obj, ...rest) => {
 _.once = func => {
   let isCalled = false;
   let result;
-  return (...rest) => {
+  return function() {
     if(isCalled === false) {
       isCalled = true;
-      result = func(...rest)
+      result = func(arguments)
     }
     return result;
   }

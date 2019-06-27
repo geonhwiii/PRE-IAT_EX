@@ -37,3 +37,15 @@ for (var i=0; i<3; i++) {
     console.log('#3. My value:' + j);
   })(i);
 }
+
+{
+  let name = "리차드박";
+  
+  function getName() {
+    name = "오박사";
+    console.log(name);
+  }
+  console.log(name) // 리차드박
+  getName();        // 오박사
+  console.log(name) // 오박사
+}
