@@ -15,4 +15,7 @@ myHealth.showHealth();
 // 2.
 const previousObj = {name: 'crong', lastTime: "11:20"};
 const myHealth2 = Object.assign({}, previousObj, {});
-console.log(myHealth2=== previousObj)
+console.log(myHealth2 === previousObj)
+
+// 오늘 운동시간 : 11:20
+// false

@@ -24,4 +24,4 @@ function makeLotto({count, maxNumber}) {
   }
   console.log(set);
 }
-makeLotto(SETTING)
+makeLotto(SETTING) // Set { 15, 43, 23, 30, 24, 44 }

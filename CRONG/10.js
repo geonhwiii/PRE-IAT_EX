@@ -12,5 +12,5 @@ Area.prototype.getArea = function () {
 }
 
 let myArea = new Area(10, 20);
-console.log(myArea.getArea());
-console.log(myArea.height);
+console.log(myArea.getArea()); // 200
+console.log(myArea.height);    // undefined

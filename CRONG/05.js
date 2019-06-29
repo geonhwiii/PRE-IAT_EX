@@ -22,5 +22,5 @@ var news = [
 // let [, mbc] = news;
 // let { title, imgUrl } = mbc;
 let [, { title, imgUrl }] = news;
-console.log(title)
-console.log(imgUrl)
+console.log(title)  // mbc
+console.log(imgUrl) // https://static.daum.net/newsstand/2017/0313/article_img.jpg

@@ -7,7 +7,7 @@ let wm = new WeakMap();
 let myFunc = function () {};
 
 wm.set(myFunc, 0);
-// console.log(wm)
+console.log(wm) // WeakMap { <items unknown> }
 
 let count = 0;
 for(let i = 0; i < 10; i++) {
